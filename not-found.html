@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sytle.css">
+    <title>Video Web</title>
+</head>
+<body>
+    <header id="switch" class="header">
+        <div class="header__container">
+            <a href="index.html">
+                <img class="header__img" src="img/logo.png" alt="logo-pro dev">
+            </a>
+            <div class="header__menu">
+                <div class="header__menu--profile">
+                    <img src="img/profile.png" alt="pefil">
+                    <p>Perfil</p>
+                </div>
+                <ul>
+                    <li><a href="">Cuenta</a></li>
+                    <li><a href="">Cerrar Sesión</a></li>      
+                </ul>
+            </div>
+        </div>
+    </header>
+   <section class="not-found">
+        <div class="not-found__message">
+            <h1 class="not-found__message--alert animated hinge">404</h1>
+            <p>Página no encontrada</p>
+        </div> 
+   </section>
+   <footer class="footer">
+        <a class="a" href="/">Términos de uso</a>
+        <a class="a" href="/">Declaración de privacidad</a>
+        <a class="a" href="/">Centro de ayuda</a>
+        <a class="a" href="https://pexels.com" target="_blank">Images by Pexels</a>
+        <a class="a" href="https://icons8.com" target="_blank">Icons by Icons8</a>
+    </footer>
+    
+    <script>
+        const headStlye = document.getElementById('switch').style; // guardar información de los estilos del head en variable
+              headStlye.backgroundColor = '#21C08b'; // ejecutar cambio en los estilos
+
+        /* solamente ejecutar, sin guardar en variables 
+        
+            document.getElementById('switch').style.backgroundColor = '#21C08b';
+
+
+        */
+    </script>
+</body>
+</html>

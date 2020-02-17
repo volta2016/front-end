@@ -1,0 +1,507 @@
+body {
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+    background-color: #8F57FD;
+}
+
+
+
+.header {
+    background-color: #8F57FD;
+   
+}
+.header__container {
+    box-sizing: border-box;
+    padding: .5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* .head--bg-green{
+    background-color: #8F57FD;
+} */
+.header__img {
+    height: 45px;
+}
+.header__menu {
+    margin-right: 30px;
+}
+
+.header__menu ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0px 0px 0px -14px;
+}
+.header__menu:hover ul, ul:hover {
+    display: block;
+ }
+.header__menu li {
+    margin: 10px 0px;
+}
+.header__menu li a {
+    color: white; 
+    text-decoration: none;
+}
+.header__menu li a:hover {
+    text-decoration: underline;
+}
+.header__menu--profile {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.header__menu--profile img {
+    margin-right: 8px;
+    height: 40px;
+}
+.header__menu--profile p {
+    margin: 0px;
+    color: white;
+}
+
+/* section-info app */
+.proyecto-app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    color: white;
+    text-align: center;
+}
+.proyecto-app__img img {
+    height: 100px;
+
+}
+.proyecto-app__info strong, .proyecto-app__info em {
+    font-weight: 900;
+    font-size: 18px;
+}
+/* section-info app */
+
+
+
+
+.main {
+    height: 300px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__tittle {
+    color: white;
+    font-size: 25px;
+}
+.categories__title {
+    color: white;
+    font-size: 16px;
+    max-width: 1200px;
+    padding-left: .5rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* le quitamos el jerarquia de BEM */
+.input {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid white;
+    border-radius: 35px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    padding: 0 20px;
+    width: 70%;
+    outline: none;
+}
+::placeholder {
+    color: white;
+}
+/* //carousel */
+.carousel {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 20px;
+    margin-bottom: 3rem;
+
+}
+.carousel__container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+.carousel-item {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+}
+.carousel-item:hover ~ .carousel-item {
+    transform: translate3d(100px, 0, 0);
+}
+/* con este hover bajamos mos la opacidad a los elementos no seleccionados */
+.carousel__container:hover .carousel-item {
+    opacity: 0.3;
+}
+/* con esta trasformacion al posicionarse sobre, ya va tener una escala mayor */
+.carousel__container:hover .carousel-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+.carousel-item__img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+.carousel-item__details {
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.carousel-item:hover .carousel-item__details {
+    opacity: 1;
+}
+.carousel-item__details img {
+    width: 20px;
+}
+.carousel-item__details--title {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.carousel-item__details--subtitle {
+    color: #fff;
+    font-size: .5rem;
+    font-weight: 600;
+}
+/* scroll */
+::-webkit-scrollbar {
+    /* width: 7px; */
+    height: 10px;
+}
+/* ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+} */
+/* //barra scrool desplazdora */
+::-webkit-scrollbar-thumb {
+    background: #393e46;
+    /* border: 0px none #ffffff; */
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #222831;
+}
+base scrool nativo
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+    background: #00adb5;
+}
+::-webkit-scrollbar-track:active {
+    background: #00adb5;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+.a {
+    color: white;
+    text-decoration: none;
+}
+
+/* :::::login:::: */
+.login {
+    background: linear-gradient(#21C08b,#AB88FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 30px;
+    /* medida relativa similar al % - 
+    es el 100% de que ve el usuario por que menos 200px
+    por que quiero que se me vea el login exceptuando 
+    el header y footer*/
+    min-height: calc(100vh - 200px);
+}
+.login__container {
+    background-color: rgba(255,255,255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 600px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container--form label {
+    font-size: 14px;
+}
+.login__container--remember-me {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .login__container--remember-me a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .login__container--remember-me a:hover {
+    text-decoration: underline;
+  }
+.login__container--social-media > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.login__container--social-media > div > img  {
+    width: 30px;
+    margin-right: 10px;
+}
+.login__container--register {
+    font-size: 14px;
+}
+.login__container--register a {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.login__container--register a {
+    text-decoration: underline;
+}
+.input-login {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    outline: none;
+    height: 50px;
+}
+
+::placeholder {
+    color: white;
+    
+}
+.button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+/* not-found */
+.not-found {
+    background: linear-gradient(#21C08b,#AB88FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 150px); 
+}
+.not-found__message h1 {
+    font-size: 100px;
+    margin: 0;
+    color: white;
+}
+.not-found__message p {
+   color: white;
+   text-align: center;
+}
+.animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+@keyframes hinge {
+    0% {transform: rotate(0);transform-origin: top left;animation-timing-function: ease-in-out;}
+    20%, 60% {transform: rotate(80deg);transform-origin: top left;animation-timing-function: ease-in-out;}
+    40% {transform: rotate(60deg);transform-origin: top left;animation-timing-function: ease-in-out;}
+    80% {transform: rotate(60deg) translateY(0);transform-origin: top left;animation-timing-function: ease-in-out;}
+    100% {transform: translateY(700px);}
+  }
+  .hinge {
+    margin: 20px;
+    animation-name: hinge;
+  }
+
+/* index flip card */
+/* flip card */
+.flip {
+    padding: 2rem 0;
+}
+.container-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 340px;
+    height: 490px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: 2rem 0;
+  }
+ 
+  .flip-card__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card__inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card--front, .flip-card--back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .flip-card--front {
+    background: linear-gradient(#A36BE7,#431EEC);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    overflow: hidden;
+  }
+  .flip-card-front#colorNav li ul img {
+    width: 167px;
+    height: 130px;
+  }
+  .flip-card--back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    background: linear-gradient(#A36BE7,#431EEC);
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 22px;
+    overflow: hidden;
+  }
+  .flip-card--back button {
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 80%;
+    min-height: 40px;
+    font-size: 14px;
+    color: white;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .flip-card--back button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  /* end card */
+
+/* footer */
+
+.footer {
+    background-color:#ab88ff6b;
+    align-items: center;
+    display: flex;
+    min-height: 110px;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer .a {
+    font-size: 1rem;
+    padding-left: 30px;
+}
+.a:hover {
+    text-decoration: underline;
+}
+
+/* footer */
+
+
+
+@media only screen and (max-width: 600px) {  
+
+.login__container {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+
+.footer {
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+}
+.header__img, .header__menu--profile img {
+    height: 37px;
+}
+.header__menu {
+    margin-right: 0;
+}
+.footer .a {
+    padding-left: 0;
+}
+
+}

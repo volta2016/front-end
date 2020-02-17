@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sytle.css">
+    <link  rel="icon"   href="img/favicon" type="image/png" />
+</head>
+<body>
+    <header id="switch" class="header">
+        <div class="header__container">
+            <a href="index.html">
+                <img class="header__img" src="img/logo.png" alt="logo-pro dev"">
+            </a>
+            <div class="header__menu">
+                <div class="header__menu--profile">
+                    <img src="img/profile.png" alt="pefil">
+                    <p>Perfil</p>
+                </div>
+                <ul>
+                    <li><a href="">Cuenta</a></li>
+                    <li><a href="">Cerrar Sesión</a></li>      
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="proyecto-app">
+        <div class="proyecto-app__img">
+            <img src="img/mr-robot-junior.png" alt="">
+        </div>
+        <div class="proyecto-app__info">
+            <h1>componentes para App </h1>
+            <p>Proyecto de Arquitectura web para la  escuela de JavaScript, metodología aplicada <strong>BEM</strong>.  agiliza para nombrar y clasificar selectores CSS de manera estricta, aplicación de css3 para animaciones y JavaScript para dinamismo e interactividad del sitio.
+            </p>
+            <p><em>#htm5</em> <em>#cs3</em> <em>#js</em></p>   
+
+        </div>
+    </section>
+    <section class="flip">
+        <div class="container-wrap">
+                <div class="flip-card">
+                    <div class="flip-card__inner">
+                        <div class="flip-card--front">
+                            <img src="img/mobile-login.png" alt="icon">
+                            <h2>Login</h2>
+
+                        </div>
+                        <div class="flip-card--back">
+                            <h2>Login component</h2>
+                            <p>Registro de usuario para entrar a la App
+                            Adaptibilidad mobil 
+                            </p>
+                            <a href="login.html">
+                                <button>Ver componente</button>
+                             </a>
+
+                        </div>
+                    </div> 
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card__inner">
+                        <div class="flip-card--front">
+                            <img src="img/mobile-search-video.png" alt="icon">
+                            <h2>Video search</h2>
+                        </div>
+                        <div class="flip-card--back">
+                            <h2>Video search</h2>
+                            <p>Caruosel slide animation componente 
+                            para visualizar  y filtrar videos,
+                            </p>
+                            <a href="menu-videos.html">
+                                <button>Ver componente</button>
+                             </a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card__inner">
+                        <div class="flip-card--front">
+                            <img src="img/mobile-notfound.png" alt="icon">
+                            <h2>Not found</h2>
+                        </div>
+                        <div class="flip-card--back">
+                            <h2>Not found</h2>
+                            <p>Enlace defectuoso error 404</p>
+                            <a href="not-found.html">
+                               <button>Ver componente</button>
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+        </div>
+    </section>
+   
+   <footer class="footer">
+        <a class="a" href="/">Términos de uso</a>
+        <a class="a" href="/">Declaración de privacidad</a>
+        <a class="a" href="/">Centro de ayuda</a>
+        <a class="a" href="https://pexels.com" target="_blank">Images by Pexels</a>
+        <a class="a" href="https://icons8.com" target="_blank">Icons by Icons8</a>
+    </footer>
+    
+    <script>
+        const headStlye = document.getElementById('switch').style; // guardar información de los estilos del head en variable
+              headStlye.backgroundColor = '#ab88ff6b'; // ejecutar cambio en los estilos
+
+        /* solamente ejecutar, sin guardar en variables 
+        
+            document.getElementById('switch').style.backgroundColor = '#21C08b';
+
+
+        */
+    </script>
+</body>
+</html>

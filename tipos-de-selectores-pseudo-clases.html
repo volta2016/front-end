@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<htmllang="en">
+<head>
+    <metacharset="UTF-8">
+    <metaname="viewport"content="width=1, initial-scale=1.0">
+    <metahttp-equiv="X-UA-Compatible"content="ie=edge">
+    <title>ejercicio pseudo elemento - selectores</title>
+
+    <style>
+        /* Use this to select the first element  */
+        p:first-child {
+            color: darkturquoise;
+        }
+        /* Use this to select the  last element  */
+        /* p:last-child {
+            color: deeppink;
+        } */
+        /* Use this math functions like par 2n or 2n+1
+        par */
+        
+        p:nth-child(2n) {
+            color: darkmagenta;
+        }
+        /* impar  */
+         p:nth-child(2n+1) {
+            color: deeppink;
+        }
+        /* psuedo-elementos */
+        /* first letter */
+ 
+        p::first-letter {
+        color: darkturquoise;
+        font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+        <p>Rabbit🐰</p>
+        <p>Dog🐶 </p>
+        <p>Cow🐮</p>
+        <p>Mouse🐁</p>
+</body>
+</html>
