@@ -79,6 +79,10 @@ body {
     height: 100px;
 
 }
+.proyecto-app__info p {
+    margin: 0 20px;
+
+}
 .proyecto-app__info strong, .proyecto-app__info em {
     font-weight: 900;
     font-size: 18px;
